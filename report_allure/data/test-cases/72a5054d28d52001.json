@@ -1,0 +1,90 @@
+{
+  "uid" : "72a5054d28d52001",
+  "name" : "添加人员",
+  "fullName" : "case.Personnel_information.test_Personnel_list#test_addpersonnel",
+  "historyId" : "7570f88e1d51b7b4743ca87c48d3e455",
+  "time" : {
+    "start" : 1735304062789,
+    "stop" : 1735304062928,
+    "duration" : 139
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "登录，获取token",
+    "time" : {
+      "start" : 1735304052672,
+      "stop" : 1735304062788,
+      "duration" : 10116
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "9042329d151ab2e3",
+      "name" : "64c8335f-05de-44f6-a85a-a24d6d13a557-attachment.attach",
+      "source" : "9042329d151ab2e3.attach",
+      "type" : "text/plain",
+      "size" : 1471
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "f7c13b26652a079e",
+      "name" : "dc05dfa8-4fc2-41a9-804d-d6e3f2b6f0e5-attachment.attach",
+      "source" : "f7c13b26652a079e.attach",
+      "type" : "text/plain",
+      "size" : 72
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "case.Personnel_information"
+  }, {
+    "name" : "suite",
+    "value" : "test_Personnel_list"
+  }, {
+    "name" : "host",
+    "value" : "Yyyyyy"
+  }, {
+    "name" : "thread",
+    "value" : "4200-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "case.Personnel_information.test_Personnel_list"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "72a5054d28d52001.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,39 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "case.Personnel_information",
+    "children" : [ {
+      "name" : "test_Personnel_list",
+      "children" : [ {
+        "name" : "添加人员",
+        "uid" : "72a5054d28d52001",
+        "parentUid" : "85bcabe807f93137260177db787ab4e9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1735304062789,
+          "stop" : 1735304062928,
+          "duration" : 139
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "人员列表查询",
+        "uid" : "f790f8584e079fdc",
+        "parentUid" : "85bcabe807f93137260177db787ab4e9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1735304062930,
+          "stop" : 1735304063127,
+          "duration" : 197
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "85bcabe807f93137260177db787ab4e9"
+    } ],
+    "uid" : "39c9b4ee1ebeacb631b80d3f2dd4463f"
+  } ]
+}

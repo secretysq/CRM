@@ -1,0 +1,1 @@
+pytest_plugins = ["case.login.test_login"]
