@@ -1,1 +1,0 @@
-{"uuid": "3a896d1e-1a16-4552-a76d-c81c001f1003", "children": ["67eab69b-2291-41f2-a1bb-273b4a4f01da", "97c5424c-760b-4e9e-ab6b-52767049b3d1"], "befores": [{"name": "登录，获取token", "status": "passed", "attachments": [{"source": "64c8335f-05de-44f6-a85a-a24d6d13a557-attachment.attach"}], "start": 1735304052672, "stop": 1735304062788}], "start": 1735304052672, "stop": 1735304063127}

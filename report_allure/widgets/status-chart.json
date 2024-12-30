@@ -1,20 +1,10 @@
 [ {
-  "uid" : "72a5054d28d52001",
-  "name" : "添加人员",
-  "time" : {
-    "start" : 1735304062789,
-    "stop" : 1735304062928,
-    "duration" : 139
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "f790f8584e079fdc",
+  "uid" : "24921228ee8291d0",
   "name" : "人员列表查询",
   "time" : {
-    "start" : 1735304062930,
-    "stop" : 1735304063127,
-    "duration" : 197
+    "start" : 1735569561018,
+    "stop" : 1735569561018,
+    "duration" : 0
   },
   "status" : "passed",
   "severity" : "normal"

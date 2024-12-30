@@ -1,8 +1,10 @@
 import allure
+import pytest
 import requests
 from public.config import *
 
 @allure.title("添加人员")
+@pytest.fixture
 def test_addpersonnel(test_login):
     token= test_login
     data={
@@ -23,21 +25,32 @@ def test_addpersonnel(test_login):
         headers=headers
     )
     allure.attach(res.text)
+    status = ""
+    if res.json().get("message") == "新增成功":
+        status = "ok"
+    # assert res.json().get("message") == "新增成功"
+    return status
 
 @allure.title("人员列表查询")
-def test_personnel_list(test_login):
+def test_personnel_list(test_login,test_addpersonnel):
     token = test_login
-    data = {
-        "page": 1,
-        "limit": 20,
-        "userName":"python"
-    }
-    headers = {
-        "Authorization": token
-    }
-    res = requests.post(
-        url=f"{PROJECT_URL}/api/MemberAdminService/Member/GetMemberPageList",
-        json=data,
-        headers=headers
-    )
-    allure.attach(res.text)
+    status = test_addpersonnel
+    if status == "ok":
+        data = {
+            "page": 1,
+            "limit": 20,
+            "userName": "python"
+        }
+        headers = {
+            "Authorization": token
+        }
+        res = requests.post(
+            url=f"{PROJECT_URL}/api/MemberAdminService/Member/GetMemberPageList",
+            json=data,
+            headers=headers
+        )
+        allure.attach(res.text)
+    # else:
+    #     allure.attach(f"请求失败，查询有误")
+
+

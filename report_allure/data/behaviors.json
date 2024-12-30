@@ -2,27 +2,14 @@
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "name" : "behaviors",
   "children" : [ {
-    "name" : "添加人员",
-    "uid" : "72a5054d28d52001",
-    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
-    "status" : "passed",
-    "time" : {
-      "start" : 1735304062789,
-      "stop" : 1735304062928,
-      "duration" : 139
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ ]
-  }, {
     "name" : "人员列表查询",
-    "uid" : "f790f8584e079fdc",
+    "uid" : "24921228ee8291d0",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1735304062930,
-      "stop" : 1735304063127,
-      "duration" : 197
+      "start" : 1735569561018,
+      "stop" : 1735569561018,
+      "duration" : 0
     },
     "flaky" : false,
     "newFailed" : false,

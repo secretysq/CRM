@@ -4,35 +4,22 @@
   "children" : [ {
     "name" : "Yyyyyy",
     "children" : [ {
-      "name" : "4200-MainThread",
+      "name" : "9212-MainThread",
       "children" : [ {
         "name" : "人员列表查询",
-        "uid" : "f790f8584e079fdc",
-        "parentUid" : "c760b6cb0beef567787d9750007b2355",
+        "uid" : "24921228ee8291d0",
+        "parentUid" : "d57cc5ebca45ffbce4799d2fe42e4688",
         "status" : "passed",
         "time" : {
-          "start" : 1735304062930,
-          "stop" : 1735304063127,
-          "duration" : 197
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "添加人员",
-        "uid" : "72a5054d28d52001",
-        "parentUid" : "c760b6cb0beef567787d9750007b2355",
-        "status" : "passed",
-        "time" : {
-          "start" : 1735304062789,
-          "stop" : 1735304062928,
-          "duration" : 139
+          "start" : 1735569561018,
+          "stop" : 1735569561018,
+          "duration" : 0
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "c760b6cb0beef567787d9750007b2355"
+      "uid" : "d57cc5ebca45ffbce4799d2fe42e4688"
     } ],
     "uid" : "579312144b6270f16430567918c41975"
   } ]
