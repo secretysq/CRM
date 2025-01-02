@@ -1,2 +1,4 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Mon Dec 30 22:39:21 CST 2024","Mon Dec 30 22:39:21 CST 2024","0","case.Personnel_information","test_Personnel_list","","","","人员列表查询",""
+"passed","Thu Jan 02 21:46:23 CST 2025","Thu Jan 02 21:46:23 CST 2025","0","case.Personnel_information","test_Personnel_list","","","","人员列表查询",""
+"passed","Thu Jan 02 21:46:23 CST 2025","Thu Jan 02 21:46:24 CST 2025","572","case.Workorder_processing","test_Workorder_processing","","","","获取工单列表",""
+"passed","Thu Jan 02 21:46:24 CST 2025","Thu Jan 02 21:46:49 CST 2025","24726","","","","","","在线处理",""

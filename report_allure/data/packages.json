@@ -2,21 +2,55 @@
   "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
   "name" : "packages",
   "children" : [ {
-    "name" : "case.Personnel_information.test_Personnel_list",
+    "name" : "case",
     "children" : [ {
-      "name" : "人员列表查询",
-      "uid" : "24921228ee8291d0",
-      "parentUid" : "3dc3c20ec51526185598086672fa18a4",
-      "status" : "passed",
-      "time" : {
-        "start" : 1735569561018,
-        "stop" : 1735569561018,
-        "duration" : 0
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ ]
+      "name" : "Personnel_information.test_Personnel_list",
+      "children" : [ {
+        "name" : "人员列表查询",
+        "uid" : "1b1fee0aa05ac415",
+        "parentUid" : "3dc3c20ec51526185598086672fa18a4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1735825583769,
+          "stop" : 1735825583769,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "Personnel_information.test_Personnel_list"
+    }, {
+      "name" : "Workorder_processing.test_Workorder_processing",
+      "children" : [ {
+        "name" : "获取工单列表",
+        "uid" : "a7b328e0ba15754e",
+        "parentUid" : "cc8f7a5a54ca2fa751ffd3b2a5dab307",
+        "status" : "passed",
+        "time" : {
+          "start" : 1735825583777,
+          "stop" : 1735825584349,
+          "duration" : 572
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "Workorder_processing.test_Workorder_processing"
     } ],
-    "uid" : "case.Personnel_information.test_Personnel_list"
+    "uid" : "3a5ff917f72cbd03b2a2ff2549394ef0"
+  }, {
+    "name" : "在线处理",
+    "uid" : "45841650b4f6817",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1735825584354,
+      "stop" : 1735825609080,
+      "duration" : 24726
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
   } ]
 }

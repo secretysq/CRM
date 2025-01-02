@@ -1,8 +1,19 @@
 {
-  "total" : 1,
+  "total" : 3,
   "items" : [ {
     "uid" : "39c9b4ee1ebeacb631b80d3f2dd4463f",
     "name" : "case.Personnel_information",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "e618eb543cf9c766ccbb779a99f77941",
+    "name" : "case.Workorder_processing",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,

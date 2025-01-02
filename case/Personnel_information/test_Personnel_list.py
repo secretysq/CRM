@@ -28,7 +28,6 @@ def test_addpersonnel(test_login):
     status = ""
     if res.json().get("message") == "新增成功":
         status = "ok"
-    # assert res.json().get("message") == "新增成功"
     return status
 
 @allure.title("人员列表查询")
@@ -50,7 +49,6 @@ def test_personnel_list(test_login,test_addpersonnel):
             headers=headers
         )
         allure.attach(res.text)
-    # else:
-    #     allure.attach(f"请求失败，查询有误")
+
 
 
