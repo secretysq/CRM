@@ -1,22 +1,85 @@
 # import allure
+# import pytest
 # import requests
+# import json
+# from public.config import *
+# # import json
+# import random
+# #
+# # # 假设这是你的JSON字符串
+# # json_str = '''
+# # {
+# #   "status": 1,
+# #   "message": "获取工单列表",
+# #   "data": [
+# #     {
+# #       "id": 12966,
+# #       "orderIdNumber": "FBW202412181549447117933",
+# #       "name": "12",
+# #       "type": 6,
+# #       "typeName": "律师函",
+# #       "chatName": "测试",
+# #       "isUpdateOrder": 0,
+# #       "updateStatus": 0,
+# #       "estimatedTime": "2025-01-06 15:45:14",
+# #       "lawyerId": 0,
+# #       "handleMemberId": 394,
+# #       "handleMemberName": "王丹"
+# #     },
+# #     {
+# #       "id": 12967,
+# #       "orderIdNumber": "FBW202412181549447117934",
+# #       "name": "13",
+# #       "type": 6,
+# #       "typeName": "律师函",
+# #       "chatName": "测试",
+# #       "isUpdateOrder": 0,
+# #       "updateStatus": 0,
+# #       "estimatedTime": "2025-01-06 15:45:15",
+# #       "lawyerId": 0,
+# #       "handleMemberId": 395,
+# #       "handleMemberName": "李明"
+# #     }
+# #   ]
+# # }
+# # '''
+# #
+# # # 将JSON字符串解析为Python字典
+# # data = json.loads(json_str)
+# #
+# # # 从data列表中随机选择一个工单
+# # random_order = random.choice(data['data'])
+# #
+# # # 获取该工单的id
+# # random_id = random_order['id']
+# #
+# # print("随机选择的id:", random_id)
 #
-# @allure.title("登录，获取token")
-# def list_test():
-#     token = 'Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjYzNDM5MDkwNDZENTk4QzYxQTQ3MzA5QjgwQkY1NzVENDY5N0VGMTRSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IlkwT1FrRWJWbU1ZYVJ6Q2JnTDlYWFVhWDd4USJ9.eyJuYmYiOjE3MzUwNDg5MTksImV4cCI6MTczNTA5MjExOSwiaXNzIjoiaHR0cDovLzYwLjIwNC4yNDkuMTc4OjU0MDAiLCJhdWQiOiJNZW1iZXJBZG1pbkFwaSIsImNsaWVudF9pZCI6ImZhYmFvQ3JtQWRtaW4iLCJzdWIiOiIwIiwiYXV0aF90aW1lIjoxNzM1MDQ4OTE5LCJpZHAiOiJsb2NhbCIsIm5hbWUiOiJzdXBlcmFkbWluIiwidXNlck5hbWUiOiLotoXnuqfnrqHnkIblkZgiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIwIiwiZ3JvdXAiOiIwIiwiYmxvY2siOiIwIiwianRpIjoiRjQxODA0RTZDMTAzOUM0RjIzMjM0RDRBMTc4RTE4NTciLCJpYXQiOjE3MzUwNDg5MTksInNjb3BlIjpbIk1lbWJlckFkbWluQXBpIiwib3BlbmlkIiwicHJvZmlsZSIsIm9mZmxpbmVfYWNjZXNzIl0sImFtciI6WyJjdXN0b20iXX0.BmXLmPEWYZdkEue4Jd18IUE7c68bsUM-9fZF2ZITmK-9EaIZ4CVcIYs2IXT72GajjO6fustcZZTfxHfUG4bcX-n6jfOcWyWRoge7dMxSvAkwUObwvnufzl2A7FyDv6XxbwoFdxnbYLXlbQ-_XC7ndHP7a_YGAVrHJ45KMP_10aw9g437VPMIHG5KYJHnQ6LDdXl8SvY9sJ_9RWVVRg3Gxm4mwyN-3SIS2U9fxR02FG0bHKKTPo2h2Ku5IrkN_iQCuFlimQdZ_rRxalvySBHhADoT8SA9L_1Q_VZJBRydBOmQvsPX0PIa7CyS_t-uIvB0wsvrkk1x58fIaF5eSfPuTA'
-#     headers = {"Authorization": token}
-#     try:
-#         res = requests.post(
-#             url="https://workordertest.365lawhelp.com/api/OrderService/WorkOrderType/GetWorkOrderTypeList",
-#             headers=headers,
-#         )
-#         res.raise_for_status()  # 将触发异常，如果状态码不是200
-#         return res
-#     except requests.exceptions.RequestException as e:
-#         print(f"请求失败: {e}")
-#         return None
+# def test_workorder(test_login):
+#     token=test_login
+#     data = {
+#         "page": 1,
+#         "limit": 10,
+#         "status":2
+#     }
+#     headers = {
+#         "Authorization": token
+#     }
+#     res = requests.post(
+#         url=f"{PROJECT_URL}/api/OrderAdminService/WorkOrder/GetAdminPageList",
+#         json=data,
+#         headers=headers
+#     )
+#     order_data = res.text
+#     allure.attach(res.text)
+#     print(order_data)
 #
-# # 调用函数
-# response = list_test()
-# if response:
-#     print(response.json())
+#     data = json.loads(order_data)
+#
+#     # 从data列表中随机选择一个工单
+#     random_order = random.choice(data['data'])
+#
+#     # 获取该工单的id
+#     random_id = random_order['id']
+#
+#     print("随机选择的id:", random_id)

@@ -7,12 +7,12 @@
       "name" : "test_Personnel_list",
       "children" : [ {
         "name" : "人员列表查询",
-        "uid" : "1b1fee0aa05ac415",
+        "uid" : "5f3c9926a8ec48e7",
         "parentUid" : "85bcabe807f93137260177db787ab4e9",
         "status" : "passed",
         "time" : {
-          "start" : 1735825583769,
-          "stop" : 1735825583769,
+          "start" : 1736257899051,
+          "stop" : 1736257899051,
           "duration" : 0
         },
         "flaky" : false,
@@ -27,14 +27,14 @@
     "children" : [ {
       "name" : "test_Workorder_processing",
       "children" : [ {
-        "name" : "获取工单列表",
-        "uid" : "a7b328e0ba15754e",
+        "name" : "在线处理",
+        "uid" : "7e73a7673ef366cd",
         "parentUid" : "b64093faa4622784494c58dae94ae2d1",
         "status" : "passed",
         "time" : {
-          "start" : 1735825583777,
-          "stop" : 1735825584349,
-          "duration" : 572
+          "start" : 1736257899728,
+          "stop" : 1736257900466,
+          "duration" : 738
         },
         "flaky" : false,
         "newFailed" : false,
@@ -43,18 +43,5 @@
       "uid" : "b64093faa4622784494c58dae94ae2d1"
     } ],
     "uid" : "e618eb543cf9c766ccbb779a99f77941"
-  }, {
-    "name" : "在线处理",
-    "uid" : "45841650b4f6817",
-    "parentUid" : "98d3104e051c652961429bf95fa0b5d6",
-    "status" : "passed",
-    "time" : {
-      "start" : 1735825584354,
-      "stop" : 1735825609080,
-      "duration" : 24726
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ ]
   } ]
 }

@@ -2,50 +2,37 @@
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "name" : "timeline",
   "children" : [ {
-    "name" : "在线处理",
-    "uid" : "45841650b4f6817",
-    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
-    "status" : "passed",
-    "time" : {
-      "start" : 1735825584354,
-      "stop" : 1735825609080,
-      "duration" : 24726
-    },
-    "flaky" : false,
-    "newFailed" : false,
-    "parameters" : [ ]
-  }, {
     "name" : "Yyyyyy",
     "children" : [ {
-      "name" : "1736-MainThread",
+      "name" : "7080-MainThread",
       "children" : [ {
-        "name" : "人员列表查询",
-        "uid" : "1b1fee0aa05ac415",
-        "parentUid" : "9315907d227872ccabacd7caca0b6677",
+        "name" : "在线处理",
+        "uid" : "7e73a7673ef366cd",
+        "parentUid" : "b92098a4d71b235709c0fc69b0dfb382",
         "status" : "passed",
         "time" : {
-          "start" : 1735825583769,
-          "stop" : 1735825583769,
-          "duration" : 0
+          "start" : 1736257899728,
+          "stop" : 1736257900466,
+          "duration" : 738
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "获取工单列表",
-        "uid" : "a7b328e0ba15754e",
-        "parentUid" : "9315907d227872ccabacd7caca0b6677",
+        "name" : "人员列表查询",
+        "uid" : "5f3c9926a8ec48e7",
+        "parentUid" : "b92098a4d71b235709c0fc69b0dfb382",
         "status" : "passed",
         "time" : {
-          "start" : 1735825583777,
-          "stop" : 1735825584349,
-          "duration" : 572
+          "start" : 1736257899051,
+          "stop" : 1736257899051,
+          "duration" : 0
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "9315907d227872ccabacd7caca0b6677"
+      "uid" : "b92098a4d71b235709c0fc69b0dfb382"
     } ],
     "uid" : "579312144b6270f16430567918c41975"
   } ]
